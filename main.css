@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(69, 115, 243);
+    padding: 10px 100px; 
+    display: flex;
+    justify-content: space-between;  
+    color: aliceblue;
+}
+
+header h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700px;
+    font-style: italic;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    color: rgb(69, 115, 243);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    padding-top: 50px;
+    margin-left: 200px; 
+}
+
+.container img{
+    width: 400px; 
+    height: 300px;
+}
+
+
+.container  h2{
+    padding: 2px 100px;
+    border-bottom: 1px solid  rgb(69, 115, 243);
+    margin-bottom: 400px;
+}
+
+.sobre{
+    display: block;
+    color: rgb(69, 115, 243);
+    font-family: "Roboto", sans-serif;
+    margin-left: 90px;
+    height: 100px;   
+}
+
+
+.sobre h2{
+    margin: 20px;
+}
+
+.produtos-header{
+    margin-left: 200px;
+    border-bottom: 1px solid  rgb(69, 115, 243);
+    width: 50%;
+}
+
+#produtos h2 {
+    margin-top: 60px;
+    color: rgb(69, 115, 243);
+    font-family: "Roboto", sans-serif;
+}
+
+.container-produtos {
+    display: flex;
+    margin-left: 10%;
+    font-family: "Roboto", sans-serif;
+    width: 10%; 
+    gap: 80px; 
+}
+
+.pdt{
+    display: flex;
+    flex-direction: column;
+    width: 200px;  
+}
+
+.container-produtos p{
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+    color: rgb(87, 87, 87);
+}
+
+.container-produtos button{
+    margin-top: 10px;
+    height: 30px;
+    background-color: rgb(69, 115, 243);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.container-produtos button a{
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    
+    header {
+        width: 100%; /* Garante que o header ocupe 100% da largura */
+        padding: 10px; /* Ajusta o padding */
+    }
+    .container{
+        display: block;
+        color: rgb(69, 115, 243);
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;   
+    }
+
+    
+    .sobre {
+    display: block;
+    color: rgb(69, 115, 243);
+    font-family: "Roboto", sans-serif;
+    margin-left: 0;
+    }
+
+    .sobre h2{
+        margin: 10px;
+    }
+
+    .container-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 300%); /* Cada item ocupa 45% da largura da grade */
+        justify-content: space-between; /* Distribui o espaço entre os itens */
+        gap: 20px; /* Espaçamento mínimo entre os itens */
+        margin-left: 150px;
+    }
+    
+    .pdt {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Garante que o item ocupe todo o espaço da célula */
+    }
+    
+  
+
+    .produtos-header{
+        margin-left: 200px;
+        border-bottom: 1px solid  rgb(69, 115, 243);
+        width: 50%;
+        margin-top: 110px;
+    }    
+
+    
+
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    
+    header {
+        width: 100%; 
+        padding: 10px; 
+    }
+    .container{
+        display: block;
+        color: rgb(69, 115, 243);
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;   
+    }
+
+    
+    .sobre {
+    display: block;
+    color: rgb(69, 115, 243);
+    font-family: "Roboto", sans-serif;
+    margin-left: 0;
+    }
+
+    .sobre h2{
+        margin: 10px;
+    }
+
+    .container-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 300%); /* Cada item ocupa 45% da largura da grade */
+        justify-content: space-between; /* Distribui o espaço entre os itens */
+        gap: 20px; /* Espaçamento mínimo entre os itens */
+        margin-left: 150px;
+    }
+    
+    .pdt {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Garante que o item ocupe todo o espaço da célula */
+    }
+    
+  
+
+    .produtos-header{
+        margin-left: 200px;
+        border-bottom: 1px solid  rgb(69, 115, 243);
+        width: 50%;
+        margin-top: 110px;
+    }    
+
+    
+
+}
+
+
+@media (max-width: 640px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    
+    .container {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .container-produtos {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    
+    .pdt {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .produtos-header {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+}
